@@ -1,0 +1,47 @@
+name: todoey_flutter
+description: A new Flutter application.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  #flutter:
+  #  sdk: flutter
+  flutter_web: any
+  flutter_web_ui: any
+  rxdart: ^0.24.1
+
+  #cupertino_icons: ^0.1.2
+  provider: any
+
+dev_dependencies:
+  #flutter_test:
+  #  sdk: flutter
+  flutter_web_test: any
+  #added for web
+  build_runner: any
+  build_web_compilers: any
+
+  test: any
+
+flutter:
+  uses-material-design: true
+
+dependency_overrides:
+  flutter_web:
+    git:
+      url: https://github.com/flutter/flutter_web
+      path: packages/flutter_web
+  flutter_web_ui:
+    git:
+      url: https://github.com/flutter/flutter_web
+      path: packages/flutter_web_ui
+  flutter_web_test:
+    git:
+      url: https://github.com/flutter/flutter_web
+      path: packages/flutter_web_test
+  provider:
+    git:
+      url: https://github.com/kevmoo/provider
+      ref: flutter_web
